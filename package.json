@@ -1,0 +1,27 @@
+{
+  "name": "liip-gitlab-slack",
+  "version": "0.0.1",
+  "description": "Liip-specific configuration for gitlab-slack",
+  "scripts": {
+    "server": "node node_modules/gitlab-slack/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liip/liip-gitlab-slack"
+  },
+  "keywords": [
+    "slack",
+    "gitlab",
+    "webhooks",
+    "liip"
+  ],
+  "author": "Liip AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liip/liip-gitlab-slack/issues"
+  },
+  "homepage": "https://github.com/liip/liip-gitlab-slack",
+  "dependencies": {
+    "gitlab-slack": "git+https://github.com/nazrhyn/gitlab-slack.git"
+  }
+}
