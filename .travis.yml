@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 4.0.0
+sudo: false
+script: npm test
+deploy:
+  provider: heroku
+  app: liipgitlabslack
+  skip_cleanup: true
+  api_key:
+    secure: ZdnwZzOj1hZ+5u+8KVzeCKGOp6GOnxe4n0ARExnqmjrXCCsKfM1LBbf0cp4bMfkYmdBpmTLqz1+PA7v22/SUGztLgiSt+JFQ0CWgNSo5/CW+SJcfafRqkU67CweUjbNBqM7u9oQoSPvbyhu6EQYdMyMw/ewoxlqdk7lANBfrEmHdoOqtWTozUuAYs3hxUsQCyzpYjWn3DuNF3x3abSO04wSlZxj4OI3OW81hl68M08zJK7pcWjkpxF8XCD5xdsIKat4D7SVtfTSOHtvaVVA0T3k0SbrUjfvBov0JEbYUCSRZyAGK3zy3jwzvkpd95cuJSuFQ49mWodwGoBc3CvjoNKBl48AyuWrqXDuBWhcbvUj9JBEBWtj+T+qD+4F1EFSm6wXW8GQx03bM1nG8trSIz825ewn6PJWynes5hIQWIRnjCMbT2ym/PNXXHG0v7Icnlmg0rYkSS+rsFvULGxjmZ0eUXRcPlIH7A/kyKjHKZZSBG738DwEOByNhVpFWvZg5nbNwo1r/YV7BoRgMiDRA+BKQO9qQCt2If5siTDeFB+iB7MqoMS/R53LSZUtNGzesVyYuA6gcHgbSwvaNfXsPJnAqsEHb3LJPB4r9RB9i4Jnf/q4zqxAU33XAupmEpy1nDTtO17D6cRDAcDxUDdYhiC0gcTWBRKoyuciW+CptPTA=
+before_install:
+- openssl aes-256-cbc -K $encrypted_6d53db78486a_key -iv $encrypted_6d53db78486a_iv
+  -in config.json.enc -out config.json -d
