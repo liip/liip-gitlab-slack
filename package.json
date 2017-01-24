@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/liip/liip-gitlab-slack",
   "dependencies": {
-    "gitlab-slack": "git+https://github.com/nazrhyn/gitlab-slack.git"
+    "gitlab-slack": "git+https://github.com/nazrhyn/gitlab-slack.git",
+    "bluebird": "^3.4.1",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1",
+    "underscore": "^1.8.3"
   }
 }
